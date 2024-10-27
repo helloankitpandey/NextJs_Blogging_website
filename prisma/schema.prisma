@@ -1,0 +1,37 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+
+
+// /*
+// Prisma is the ORM tool -> which is Object Relational Mapping 
+// It makes easier to work with any type of the databases whether SQL or NoSQL
+// It is mainly used insides the backend inside node.js application 
+// in which it makes easier to query the database , to post something to the database,
+
+// It just create a schema and schema is map to any database
+// and then prisma gives us client and client can have all of the query and inserion to the database and so many things
+
+// */
+
+
+
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Post {
+  id          String @id @default(auto()) @map("_id") @db.ObjectId
+  title        String
+  description  String
+  date         DateTime @default(now())
+}
