@@ -25,10 +25,15 @@ export default async function Home() {
   
   return <main className="w-full h-full">
 
-    <div className="md: w-2/4 sm: 3/4 m-auto p-4 my-5 rounded-lg bg-slate-800 drop-shadow-xl">
+    <div className="md: w-2/4 sm: 3/4 m-auto p-4 my-5 rounded-lg relative h-24 border bg-slate-800 drop-shadow-xl">
+      <div className="text-lg">
       <h1 className="text-slate-200 text-center text-2xl font-extrabold font-[verdana]">
         My FULL STACK Blog App With Next.Js
       </h1>
+      </div>
+      <div className="bg-slate-100 absolute bottom-4 right-4 p-2 rounded-md ">
+        <p>Akki Pandey 😊</p>
+      </div>
 
     </div>
 
