@@ -2,7 +2,7 @@
 //  bcoz from further request -> we GET a post by its ID and delete a post by its ID and also update a post by its ID
 //  So for that we need id
 
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import { main } from "../route";
 import { prisma } from "@/prisma";
 
@@ -46,6 +46,7 @@ export const PUT = async (req: Request, res: NextResponse) => {
 export const DELETE = async (req: Request, res: NextResponse) => {
     try {
         const id = req.url.split("/blog/")[1]; 
+        // @ts-ignore
         await main();
         
         const post = await prisma.post.delete({where: { id }});
