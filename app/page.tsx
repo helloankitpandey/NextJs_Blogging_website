@@ -32,7 +32,7 @@ export default async function Home() {
       </h1>
       </div>
       <div className="bg-slate-100 absolute bottom-4 right-4 p-2 rounded-md ">
-        <p>Akki Pandey😊</p>
+        <p>Akki Pandey 😊</p>
       </div>
 
     </div>
@@ -41,7 +41,7 @@ export default async function Home() {
     <div className="flex my-5">
       <Link 
         href={"/blog/add"} className="md:w-1/6 sm:w-2/4 text-center rounded-md p-2 m-auto bg-slate-200 font-semibold">
-          Add New Blog 🚀
+          Add Your New Blog 🚀
       </Link>
     </div>
 
