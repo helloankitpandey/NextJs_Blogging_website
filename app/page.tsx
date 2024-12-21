@@ -32,7 +32,7 @@ export default async function Home() {
       </h1>
       </div>
       <div className="bg-slate-100 absolute bottom-4 right-4 p-2 rounded-md ">
-        <p>Akki Pandey 😊</p>
+        <p>Akki Pandey 😊 ji</p>
       </div>
 
     </div>
