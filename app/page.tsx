@@ -41,7 +41,7 @@ export default async function Home() {
     <div className="flex my-5">
       <Link 
         href={"/blog/add"} className="md:w-1/6 sm:w-2/4 text-center rounded-md p-2 m-auto bg-slate-200 font-semibold">
-          Add Your New Blog
+          Add Your New Blog 🚀
       </Link>
     </div>
 
